@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color:#4F709C; */
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5)),
+    url(assets/beautiful-young-woman-home-office-working-from-home-teleworking-concept.jpg);
+    background-size:cover;
+    height: 100vh;
+}
+  
+.container {
+    max-width: 500px;
+    margin:auto;
+    background-color:#213555;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+textarea {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #205295;
+    border-radius: 4px;
+    background-color:white; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+ 
+p{
+    /* text-align: center; */
+    margin-bottom: 20px;
+    color: white;
+}
+form{
+    margin-top: 20px;
+    color: white;
+}
+  
+form div{
+    margin-bottom: 15px;
+}
+  
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="date"],
+select{
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #205295;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    display:flex;
+    margin: 0 10px;
+    background-color: #205295;
+    background: transparent;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 3px solid white;   
+}
+ 
+button:hover{
+    background-color: white;
+    color: black;
+}  

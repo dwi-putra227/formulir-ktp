@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pendaftaran KTP</title>
+        <link rel="stylesheet" href="edit2.css">
+        <link rel="icon" href="assets/identity-card.png" >
+        <script>
+            function validateForm(){
+                var nama = document.getElementById("nama").value;
+                var nik = document.getElementById("nik").value;
+                var tgl = document.getElementById("tgl").value;
+                var tmpt = document.getElementById("tmpt").value;
+                var alamat = document.getElementById("alamat").value;
+                var kelamin = document.getElementById("kelamin").value;
+                var darah = document.getElementById("darah").value;
+                var agama = document.getElementById("agama").value;
+                var pekerjaan = document.getElementById("pekerjaan").value;
+                var kewarganegaraan = document.getElementById("kewarganegaraan").value;
+            if(nama == '')
+            {
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(nik == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(tgl == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(tmpt == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(alamat == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(kelamin == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(darah == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(agama == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(pekerjaan == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else if(kewarganegaraan == ''){
+                alert("Mohon Diisi");
+                return false;
+            }
+            else{
+                alert("Data Sudah Lengkap!");
+                var konfirmasi = confirm('Apakah Anda Yakin ?');
+                if(konfirmasi){
+                    return true;
+                } else {
+                    return false;
+                }
+                return true;
+            }  
+        }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>FORMULIR KTP</h1>
+            <p>Isi data anda dengan lengkap!</p>
+            <form onsubmit="return validateForm()" action="end.html" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="NAMA LENGKAP">
+                </div>
+                <div class="form-group">
+                    <label for="nik">NIK:</label>
+                    <input type="text" name="nik" id="nik" placeholder="16 DIGIT" maxlength="16">
+                </div>
+                <div class="form-group">
+                    <label for="tgl">Tanggal Lahir:</label>
+                    <input type="date" id="tgl" name="tgl" max="2006-12-31">
+                </div>
+                <div class="form-group">
+                    <label for="tmpt">Provinsi/Kota:</label>
+                    <input type="text" id="tmpt" name="tmpt" placeholder="KALIMANTAN TIMUR/BALIKPAPAN">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea name="alamat" id="alamat" rows="4" cols="32"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="kelamin">Jenis Kelamin:</label>
+                    <select name="kelamin" id="kelamin">
+                        <option selected disabled>-</option>
+                        <option>Laki - Laki</option>
+                        <option>Perempuan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="darah">Golongan Darah:</label>
+                    <select name="darah" id="darah">
+                        <option selected disabled>-</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>AB</option>
+                        <option>O</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="agama">Agama:</label>
+                    <select name="agama" id="agama">
+                        <option selected disabled>-</option>
+                        <option>Kristen</option>
+                        <option>Islam</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pekerjaan">Pekerjaan:</label>
+                    <input type="text" name="pekerjaan" id="pekerjaan" placeholder="BELUM BEKERJA">
+                </div>
+                <div class="form-group">
+                    <label for="kewarganegaraan">Kewarganegaraan:</label>
+                    <select name="kewarganegaraan" id="kewarganegaraan">
+                        <option selected disabled>-</option>
+                        <option>WNI</option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <a href="one1.html"><button type="button">KEMBALI</button></a>
+                    <button type="submit">KIRIM</button>
+                </div>
+            </form>  
+        </div>
+    </body>
+</html>

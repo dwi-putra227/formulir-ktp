@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: antiquewhite;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5)),
+    url(assets/beautiful-young-woman-home-office-working-from-home-teleworking-concept.jpg);
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+.box{
+    width: 320px;
+    height: 150px;
+    background-color: #213555;
+    border-radius: 20px;
+    padding: 5%;
+}
